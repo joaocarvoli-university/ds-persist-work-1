@@ -1,6 +1,5 @@
 package service.converter
 
-import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.dataformat.csv.CsvMapper
 import com.fasterxml.jackson.dataformat.csv.CsvSchema
@@ -8,7 +7,6 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper
 import utils.Constants
 import utils.EnvVars
 import java.io.File
-import java.io.IOException
 
 
 object CsvToXml : Convertible {
@@ -19,15 +17,15 @@ object CsvToXml : Convertible {
         try {
             val csv = CsvSchema.emptySchema().withHeader()
             val csvMapper = CsvMapper()
-            val xmlMapperectMapper = XmlMapper()
+            val xmlMapper = XmlMapper()
 
             val mappingIterator = csvMapper.reader().forType(
                 MutableMap::class.java
             ).with(csv).readValues<Map<*, *>>(input)
             val list = mappingIterator.readAll()
 
-            xmlMapperectMapper.enable(SerializationFeature.INDENT_OUTPUT)
-            val xml = xmlMapperectMapper.writeValueAsString(list)
+            xmlMapper.enable(SerializationFeature.INDENT_OUTPUT)
+            val xml = xmlMapper.writeValueAsString(list)
 
             output.writeText(xml)
         } catch (e: Exception) {
