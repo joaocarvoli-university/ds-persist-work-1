@@ -1,8 +1,24 @@
 package utils
 
 import java.io.*
+import java.security.MessageDigest
 
 object Helpers {
+    fun calculateHash(fileName: String, algorithm: String): String {
+        val file = File(EnvVars.BASE_PATH + "/" + fileName)
+        val messageDigest = MessageDigest.getInstance(algorithm)
+        val inputStream = file.inputStream()
+        val buffer = ByteArray(4096)
+        var bytesRead: Int
+
+        while (inputStream.read(buffer).also { bytesRead = it } != -1) {
+            messageDigest.update(buffer, 0, bytesRead)
+        }
+
+        val bytes = messageDigest.digest()
+        return bytes.joinToString("") { "%02x".format(it) }
+    }
+
     fun <T> listToStringWithSeparator(list: List<T>, separator: String): String {
         val stringBuilder = StringBuilder()
         list.forEach {

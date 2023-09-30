@@ -82,4 +82,186 @@
   "manufacturingDate" : "15042025",
   "name" : "Hand Cream",
   "price" : "2.99"
+}, {
+  "category" : "category",
+  "expirationDate" : "expirationDate",
+  "manufacturer" : "manufacturer",
+  "manufacturingDate" : "manufacturingDate",
+  "name" : "name",
+  "price" : "price"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "02032023",
+  "manufacturer" : "Colgate",
+  "manufacturingDate" : "02032023",
+  "name" : "ToohPaste Tube",
+  "price" : "1.9"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "12122023",
+  "manufacturer" : "Nivea",
+  "manufacturingDate" : "12052023",
+  "name" : "Soap",
+  "price" : "2.3"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "15102024",
+  "manufacturer" : "Pantene",
+  "manufacturingDate" : "15072024",
+  "name" : "Shampoo",
+  "price" : "4.5"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "01052025",
+  "manufacturer" : "Oral-B",
+  "manufacturingDate" : "01052025",
+  "name" : "Toothbrush",
+  "price" : "1.2"
+}, {
+  "category" : "CLEANING",
+  "expirationDate" : "23012024",
+  "manufacturer" : "Tide",
+  "manufacturingDate" : "23012024",
+  "name" : "Laundry Detergent",
+  "price" : "8.75"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "31122025",
+  "manufacturer" : "Purell",
+  "manufacturingDate" : "31122025",
+  "name" : "Hand Sanitizer",
+  "price" : "3.99"
+}, {
+  "category" : "CLEANING",
+  "expirationDate" : "18032024",
+  "manufacturer" : "Dawn",
+  "manufacturingDate" : "18032024",
+  "name" : "Dish Soap",
+  "price" : "2.75"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "10062025",
+  "manufacturer" : "Secret",
+  "manufacturingDate" : "10062025",
+  "name" : "Deodorant",
+  "price" : "2.99"
+}, {
+  "category" : "CLEANING",
+  "expirationDate" : "04122023",
+  "manufacturer" : "Windex",
+  "manufacturingDate" : "04122023",
+  "name" : "Window Cleaner",
+  "price" : "3.25"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "22092024",
+  "manufacturer" : "Dove",
+  "manufacturingDate" : "22092024",
+  "name" : "Body Wash",
+  "price" : "5.75"
+}, {
+  "category" : "CLEANING",
+  "expirationDate" : "07102023",
+  "manufacturer" : "Mr. Clean",
+  "manufacturingDate" : "07102023",
+  "name" : "Floor Cleaner",
+  "price" : "6.5"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "15042025",
+  "manufacturer" : "Neutrogena",
+  "manufacturingDate" : "15042025",
+  "name" : "Hand Cream",
+  "price" : "2.99"
+}, {
+  "category" : "category",
+  "expirationDate" : "expirationDate",
+  "manufacturer" : "manufacturer",
+  "manufacturingDate" : "manufacturingDate",
+  "name" : "name",
+  "price" : "price"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "02032023",
+  "manufacturer" : "Colgate",
+  "manufacturingDate" : "02032023",
+  "name" : "ToohPaste Tube",
+  "price" : "1.9"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "12122023",
+  "manufacturer" : "Nivea",
+  "manufacturingDate" : "12052023",
+  "name" : "Soap",
+  "price" : "2.3"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "15102024",
+  "manufacturer" : "Pantene",
+  "manufacturingDate" : "15072024",
+  "name" : "Shampoo",
+  "price" : "4.5"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "01052025",
+  "manufacturer" : "Oral-B",
+  "manufacturingDate" : "01052025",
+  "name" : "Toothbrush",
+  "price" : "1.2"
+}, {
+  "category" : "CLEANING",
+  "expirationDate" : "23012024",
+  "manufacturer" : "Tide",
+  "manufacturingDate" : "23012024",
+  "name" : "Laundry Detergent",
+  "price" : "8.75"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "31122025",
+  "manufacturer" : "Purell",
+  "manufacturingDate" : "31122025",
+  "name" : "Hand Sanitizer",
+  "price" : "3.99"
+}, {
+  "category" : "CLEANING",
+  "expirationDate" : "18032024",
+  "manufacturer" : "Dawn",
+  "manufacturingDate" : "18032024",
+  "name" : "Dish Soap",
+  "price" : "2.75"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "10062025",
+  "manufacturer" : "Secret",
+  "manufacturingDate" : "10062025",
+  "name" : "Deodorant",
+  "price" : "2.99"
+}, {
+  "category" : "CLEANING",
+  "expirationDate" : "04122023",
+  "manufacturer" : "Windex",
+  "manufacturingDate" : "04122023",
+  "name" : "Window Cleaner",
+  "price" : "3.25"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "22092024",
+  "manufacturer" : "Dove",
+  "manufacturingDate" : "22092024",
+  "name" : "Body Wash",
+  "price" : "5.75"
+}, {
+  "category" : "CLEANING",
+  "expirationDate" : "07102023",
+  "manufacturer" : "Mr. Clean",
+  "manufacturingDate" : "07102023",
+  "name" : "Floor Cleaner",
+  "price" : "6.5"
+}, {
+  "category" : "PERSONAL_HYGIENE",
+  "expirationDate" : "15042025",
+  "manufacturer" : "Neutrogena",
+  "manufacturingDate" : "15042025",
+  "name" : "Hand Cream",
+  "price" : "2.99"
 } ]

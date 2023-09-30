@@ -6,6 +6,8 @@ import service.converter.CsvToXml
 import service.dataProfiling.CSVSummary
 import service.decompressor.ZIPDecompression
 import service.fileHandler.fileWriter.CSVWriter
+import utils.Constants
+import utils.Helpers
 
 fun main(args: Array<String>){
     // Question 02 - part 1
@@ -18,7 +20,7 @@ fun main(args: Array<String>){
     }
 
     // Question 02 - part 2
-    println(CSVSummary.getEntitiesAmount("products"))
+    println("The amount of entities of the CSV file $products is ${CSVSummary.getEntitiesAmount("products")}")
 
     // Question 02 - part 3
     val csvConverterToJson = CsvToJson
@@ -33,7 +35,11 @@ fun main(args: Array<String>){
     zipDecompression.decompress("products.zip")
 
     // Question 02 - part 5
+    val hashBeforeCompress = Helpers.calculateHash("products.csv", Constants.SHA_256)
+    val hashAfterCompress =  Helpers.calculateHash( "decompressed_products/products.csv", Constants.SHA_256)
 
+    if(hashBeforeCompress == hashAfterCompress) println("The hash 256 before and after the compression are equal")
+    else println("The hash 256 before and after the compression are different")
 }
 
 private fun initializingProducts(): MutableList<Product> {
