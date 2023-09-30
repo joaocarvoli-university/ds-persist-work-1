@@ -1,5 +1,6 @@
 import model.Product
 import model.ProductCategory
+import service.dataProfiling.CSVSummary
 import service.fileHandler.reader.CSVReader
 import service.fileHandler.writer.CSVWriter
 import service.fileHandler.writer.Writeable
@@ -9,11 +10,18 @@ fun main(args: Array<String>){
     // Question 02 - part 1
     val products = initializingProducts()
 
-    val fileHandler = CSVWriter<Product>()
+    val csvWriter = CSVWriter<Product>()
     products.forEach {
-        fileHandler.loadObject(it)
-        fileHandler.writes("products")
+        csvWriter.loadObject(it)
+        csvWriter.writes("products")
     }
+
+    // Question 02 - part 2
+    println(CSVSummary.getEntitiesAmount("products"))
+
+    // Question 02 - part 3
+
+
 }
 
 private fun initializingProducts(): MutableList<Product> {
