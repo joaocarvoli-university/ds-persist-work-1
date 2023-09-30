@@ -1,6 +1,5 @@
-package common
+package utils
 
-import utils.EnvVars
 import java.io.*
 
 object Helpers {
@@ -46,5 +45,16 @@ object Helpers {
         bufferedReader.close()
 
         return stringBuilder.toString()
+    }
+
+    private fun removeCharFromString(input: String, char: Char): String {
+        return input.filter { it != char}
+    }
+
+    fun removeFileExtension(fileName: String): String{
+        var zipName = fileName.split(".").dropLast(1).toString()
+        zipName = removeCharFromString(zipName, '[')
+        zipName = removeCharFromString(zipName, ']')
+        return zipName
     }
 }

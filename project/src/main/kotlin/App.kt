@@ -1,8 +1,10 @@
 import model.Product
 import model.ProductCategory
+import service.compressor.ZIPCompression
 import service.converter.CsvToJson
 import service.converter.CsvToXml
 import service.dataProfiling.CSVSummary
+import service.decompressor.ZIPDecompression
 import service.fileHandler.writer.CSVWriter
 
 fun main(args: Array<String>){
@@ -23,6 +25,12 @@ fun main(args: Array<String>){
     val csvConverterToXml = CsvToXml
     csvConverterToJson.convert("products")
     csvConverterToXml.convert("products")
+
+    // Question 02 - part 4
+    val zipCompression = ZIPCompression
+    val zipDecompression = ZIPDecompression
+    zipCompression.compress("products.csv")
+    zipDecompression.decompress("products.zip")
 }
 
 private fun initializingProducts(): MutableList<Product> {

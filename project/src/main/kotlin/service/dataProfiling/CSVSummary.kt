@@ -1,6 +1,6 @@
 package service.dataProfiling
 
-import common.Helpers
+import utils.Helpers
 import utils.Constants
 
 object CSVSummary {
