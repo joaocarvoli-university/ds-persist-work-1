@@ -1,10 +1,9 @@
 import model.Product
 import model.ProductCategory
+import service.converter.CsvToJson
+import service.converter.CsvToXml
 import service.dataProfiling.CSVSummary
-import service.fileHandler.reader.CSVReader
 import service.fileHandler.writer.CSVWriter
-import service.fileHandler.writer.Writeable
-import java.util.logging.FileHandler
 
 fun main(args: Array<String>){
     // Question 02 - part 1
@@ -20,8 +19,10 @@ fun main(args: Array<String>){
     println(CSVSummary.getEntitiesAmount("products"))
 
     // Question 02 - part 3
-
-
+    val csvConverterToJson = CsvToJson
+    val csvConverterToXml = CsvToXml
+    csvConverterToJson.convert("products")
+    csvConverterToXml.convert("products")
 }
 
 private fun initializingProducts(): MutableList<Product> {

@@ -1,0 +1,98 @@
+<ArrayList>
+  <item>
+    <category>PERSONAL_HYGIENE</category>
+    <expirationDate>02032023</expirationDate>
+    <manufacturer>Colgate</manufacturer>
+    <manufacturingDate>02032023</manufacturingDate>
+    <name>ToohPaste Tube</name>
+    <price>1.9</price>
+  </item>
+  <item>
+    <category>PERSONAL_HYGIENE</category>
+    <expirationDate>12122023</expirationDate>
+    <manufacturer>Nivea</manufacturer>
+    <manufacturingDate>12052023</manufacturingDate>
+    <name>Soap</name>
+    <price>2.3</price>
+  </item>
+  <item>
+    <category>PERSONAL_HYGIENE</category>
+    <expirationDate>15102024</expirationDate>
+    <manufacturer>Pantene</manufacturer>
+    <manufacturingDate>15072024</manufacturingDate>
+    <name>Shampoo</name>
+    <price>4.5</price>
+  </item>
+  <item>
+    <category>PERSONAL_HYGIENE</category>
+    <expirationDate>01052025</expirationDate>
+    <manufacturer>Oral-B</manufacturer>
+    <manufacturingDate>01052025</manufacturingDate>
+    <name>Toothbrush</name>
+    <price>1.2</price>
+  </item>
+  <item>
+    <category>CLEANING</category>
+    <expirationDate>23012024</expirationDate>
+    <manufacturer>Tide</manufacturer>
+    <manufacturingDate>23012024</manufacturingDate>
+    <name>Laundry Detergent</name>
+    <price>8.75</price>
+  </item>
+  <item>
+    <category>PERSONAL_HYGIENE</category>
+    <expirationDate>31122025</expirationDate>
+    <manufacturer>Purell</manufacturer>
+    <manufacturingDate>31122025</manufacturingDate>
+    <name>Hand Sanitizer</name>
+    <price>3.99</price>
+  </item>
+  <item>
+    <category>CLEANING</category>
+    <expirationDate>18032024</expirationDate>
+    <manufacturer>Dawn</manufacturer>
+    <manufacturingDate>18032024</manufacturingDate>
+    <name>Dish Soap</name>
+    <price>2.75</price>
+  </item>
+  <item>
+    <category>PERSONAL_HYGIENE</category>
+    <expirationDate>10062025</expirationDate>
+    <manufacturer>Secret</manufacturer>
+    <manufacturingDate>10062025</manufacturingDate>
+    <name>Deodorant</name>
+    <price>2.99</price>
+  </item>
+  <item>
+    <category>CLEANING</category>
+    <expirationDate>04122023</expirationDate>
+    <manufacturer>Windex</manufacturer>
+    <manufacturingDate>04122023</manufacturingDate>
+    <name>Window Cleaner</name>
+    <price>3.25</price>
+  </item>
+  <item>
+    <category>PERSONAL_HYGIENE</category>
+    <expirationDate>22092024</expirationDate>
+    <manufacturer>Dove</manufacturer>
+    <manufacturingDate>22092024</manufacturingDate>
+    <name>Body Wash</name>
+    <price>5.75</price>
+  </item>
+  <item>
+    <category>CLEANING</category>
+    <expirationDate>07102023</expirationDate>
+    <manufacturer>Mr. Clean</manufacturer>
+    <manufacturingDate>07102023</manufacturingDate>
+    <name>Floor Cleaner</name>
+    <price>6.5</price>
+  </item>
+  <item>
+    <category>PERSONAL_HYGIENE</category>
+    <expirationDate>15042025</expirationDate>
+    <manufacturer>Neutrogena</manufacturer>
+    <manufacturingDate>15042025</manufacturingDate>
+    <name>Hand Cream</name>
+    <price>2.99</price>
+  </item>
+</ArrayList>
