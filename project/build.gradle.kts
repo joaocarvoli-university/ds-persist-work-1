@@ -15,6 +15,8 @@ dependencies {
     testImplementation(kotlin("test"))
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
     implementation("com.fasterxml.jackson.core:jackson-core:2.15.2")
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.15.2")
 }
 
 tasks.test {
