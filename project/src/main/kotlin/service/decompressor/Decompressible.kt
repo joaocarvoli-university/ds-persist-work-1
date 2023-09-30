@@ -1,5 +1,5 @@
 package service.decompressor
 
 interface Decompressible {
-    fun decompress()
+    fun decompress(fileName: String)
 }

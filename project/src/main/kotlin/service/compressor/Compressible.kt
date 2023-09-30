@@ -1,5 +1,5 @@
 package service.compressor
 
 interface Compressible {
-    fun compress()
+    fun compress(fileName: String)
 }
