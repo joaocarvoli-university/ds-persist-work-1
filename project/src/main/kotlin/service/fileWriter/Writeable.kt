@@ -1,4 +1,4 @@
-package service.fileHandler.writer
+package service.fileHandler.fileWriter
 
 interface Writeable<T> {
     fun writes(fileName: String)

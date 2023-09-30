@@ -5,7 +5,7 @@ import service.converter.CsvToJson
 import service.converter.CsvToXml
 import service.dataProfiling.CSVSummary
 import service.decompressor.ZIPDecompression
-import service.fileHandler.writer.CSVWriter
+import service.fileHandler.fileWriter.CSVWriter
 
 fun main(args: Array<String>){
     // Question 02 - part 1
@@ -31,6 +31,9 @@ fun main(args: Array<String>){
     val zipDecompression = ZIPDecompression
     zipCompression.compress("products.csv")
     zipDecompression.decompress("products.zip")
+
+    // Question 02 - part 5
+
 }
 
 private fun initializingProducts(): MutableList<Product> {

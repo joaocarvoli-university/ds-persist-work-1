@@ -1,4 +1,4 @@
-package service.fileHandler.writer
+package service.fileHandler.fileWriter
 
 import utils.Helpers
 import utils.Constants
