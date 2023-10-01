@@ -4,8 +4,8 @@ import utils.Helpers
 import utils.Constants
 
 object CSVSummary {
-    fun getEntitiesAmount(fileName: String): Int {
-        val headerLine: String = Helpers.convertFileToString(fileName, 0, Constants.CSV_EXTENSION)
+    fun getEntitiesAmount(filePath: String): Int {
+        val headerLine: String = Helpers.convertFileToString(filePath, 0)
         val header = headerLine.split(Constants.CSV_SEPARATOR).size
         return header - 1
     }

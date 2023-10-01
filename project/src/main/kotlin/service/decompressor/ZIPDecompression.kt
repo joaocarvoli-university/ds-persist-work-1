@@ -8,9 +8,11 @@ import java.util.zip.ZipEntry
 import java.util.zip.ZipInputStream
 
 object ZIPDecompression : Decompressible {
-    override fun decompress(fileName: String) {
-        val zipFile = File(EnvVars.BASE_PATH + "/" + fileName)
-        val targetDir = File(EnvVars.BASE_PATH + "/" + Constants.DECOMPRESSED + Helpers.removeFileExtension(fileName))
+    override fun decompress(filePath: String) {
+//        val zipFile = File(EnvVars.BASE_PATH + "/" + filePath)
+//        val targetDir = File(EnvVars.BASE_PATH + "/" + Constants.DECOMPRESSED + Helpers.removeFileExtension(filePath))
+        val zipFile = File(filePath)
+        val targetDir = File(Constants.DECOMPRESSED + Helpers.removeFileExtension(filePath))
 
         try {
             ZipInputStream(FileInputStream(zipFile)).use { zipStream ->

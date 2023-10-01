@@ -6,13 +6,16 @@ import com.fasterxml.jackson.dataformat.csv.CsvMapper
 import com.fasterxml.jackson.dataformat.csv.CsvSchema
 import utils.Constants
 import utils.EnvVars
+import utils.Helpers
 import java.io.File
 
 
 object CsvToJson : Convertible {
-    override fun convert(fileName: String) {
-        val input = File(EnvVars.BASE_PATH + "/" + fileName + Constants.CSV_EXTENSION)
-        val output = File(EnvVars.BASE_PATH + "/" + fileName + Constants.JSON_EXTENSION)
+    override fun convert(filePath: String) {
+//        val input = File(EnvVars.BASE_PATH + "/" + filePath + Constants.CSV_EXTENSION)
+//        val output = File(EnvVars.BASE_PATH + "/" + filePath + Constants.JSON_EXTENSION)
+        val input = File(filePath)
+        val output = File(Helpers.removeFileExtension(filePath) + Constants.JSON_EXTENSION)
 
         try {
             val csv = CsvSchema.emptySchema().withHeader()

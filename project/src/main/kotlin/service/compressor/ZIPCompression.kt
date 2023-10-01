@@ -8,9 +8,11 @@ import java.util.zip.ZipEntry
 import java.util.zip.ZipOutputStream
 
 object ZIPCompression : Compressible {
-    override fun compress(fileName: String) {
-        val file = File(EnvVars.BASE_PATH + "/" + fileName)
-        val zipFile = File(EnvVars.BASE_PATH + "/" + Helpers.removeFileExtension(fileName) + Constants.ZIP_EXTENSION)
+    override fun compress(filePath: String) {
+//        val file = File(EnvVars.BASE_PATH + "/" + filePath)
+//        val zipFile = File(EnvVars.BASE_PATH + "/" + Helpers.removeFileExtension(filePath) + Constants.ZIP_EXTENSION)
+        val file = File(filePath)
+        val zipFile = File(Helpers.removeFileExtension(filePath) + Constants.ZIP_EXTENSION)
 
         try {
             FileOutputStream(zipFile).use { fos ->
@@ -26,7 +28,7 @@ object ZIPCompression : Compressible {
             }
         } catch (e: Exception) {
             e.printStackTrace()
-            println("Error: Failed to compress $fileName")
+            println("Error: Failed to compress $filePath")
         }
     }
 }

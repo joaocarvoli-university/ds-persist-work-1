@@ -6,13 +6,16 @@ import com.fasterxml.jackson.dataformat.csv.CsvSchema
 import com.fasterxml.jackson.dataformat.xml.XmlMapper
 import utils.Constants
 import utils.EnvVars
+import utils.Helpers
 import java.io.File
 
 
 object CsvToXml : Convertible {
-    override fun convert(fileName: String) {
-        val input = File(EnvVars.BASE_PATH + "/" + fileName + Constants.CSV_EXTENSION)
-        val output = File(EnvVars.BASE_PATH + "/" + fileName + Constants.XML_EXTENSION)
+    override fun convert(filePath: String) {
+//        val input = File(EnvVars.BASE_PATH + "/" + filePath + Constants.CSV_EXTENSION)
+//        val output = File(EnvVars.BASE_PATH + "/" + filePath + Constants.XML_EXTENSION)
+        val input = File(filePath)
+        val output = File(Helpers.removeFileExtension(filePath) + Constants.XML_EXTENSION)
 
         try {
             val csv = CsvSchema.emptySchema().withHeader()
