@@ -4,8 +4,9 @@ import java.io.*
 import java.security.MessageDigest
 
 object Helpers {
-    fun calculateHash(fileName: String, algorithm: String): String {
-        val file = File(EnvVars.BASE_PATH + "/" + fileName)
+    fun calculateHash(filePath: String, algorithm: String): String {
+//        val file = File(EnvVars.BASE_PATH + "/" + fileName)
+        val file = File(filePath)
         val messageDigest = MessageDigest.getInstance(algorithm)
         val inputStream = file.inputStream()
         val buffer = ByteArray(4096)
@@ -42,8 +43,9 @@ object Helpers {
         }
     }
 
-    fun convertFileToString(fileName: String, linesLimit: Int? = null, extension: String = ""): String{
-        val inputStream: InputStream = FileInputStream(EnvVars.BASE_PATH  + "/" + fileName + extension)
+    fun convertFileToString(filePath: String, linesLimit: Int? = null, extension: String = ""): String{
+//        val inputStream: InputStream = FileInputStream(EnvVars.BASE_PATH  + "/" + filePath + extension)
+        val inputStream: InputStream = FileInputStream(filePath)
         val inputStreamReader = InputStreamReader(inputStream)
         val bufferedReader = BufferedReader(inputStreamReader)
         val fileContent = bufferedReader.readLine()

@@ -1,5 +1,5 @@
 package service.converter
 
 interface Convertible {
-    fun convert(fileName: String)
+    fun convert(filePath: String)
 }
